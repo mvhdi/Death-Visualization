@@ -1,0 +1,51 @@
+<!-- get rid of legend -->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.legend line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.tooltip {
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+  background-color: white;
+  text-align: center;
+  padding: 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v4.min.js"></script>
+<script src="colorbrewer.js"></script>
+<script src="barchart.js"></script>
+</body>
