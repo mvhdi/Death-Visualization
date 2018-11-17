@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script> <script src="popPyramid.js"></script>
+  </head>
+  <body>
+  <script>
+// data must be in a format with age, male, and female in each object 
+var exampleData = [{ age: '0-9', male: .999, female: .2 }, { age: '10-19', male: .4, female: .5 }, { age: '20-29', male: .5, female: .8 }, { age: '30-39', male: .8, female: .8 }, { age: '40-49', male: .1, female: .2 }, {age: '50-59', male: .9, female: .4 }, { age: '60-69', male: .5, female: .4 }, {age: '70-79', male: .8, female: .90 }, { age: '80-89', male: .4, female: .5 }, {age: '90+', male: .2, female: .3 }]; 
+
+var options = {
+  height: 400,
+  width: 600,
+  style: {
+    leftBarColor: "#229922",
+    rightBarColor: "#992222"
+  }
+}
+pyramidBuilder(exampleData, '#pyramid', options);
+</script>
+  </body>
+</html>
