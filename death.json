@@ -1,0 +1,93 @@
+{"name": "CIRCLE OF 'LIFE'","children": [{
+
+    "name": "Male", "children": [{
+
+        "name": "Black", "size": 1
+    }, {
+        "name": "Native", "size": 1
+    }, {
+        "name": "Hispanic", "size": 1
+    }, {
+        "name": "White", "size": 1
+    }, {
+        "name": "Asian","size": 1
+
+    }
+    
+    ]
+
+
+},
+
+
+
+
+
+
+{
+
+    "name": "Female", "children": [{
+
+        "name": "Black", "size": 1
+    }, {
+        "name": "Native", "size": 1
+    }, {
+        "name": "Hispanic", "size": 1
+    }, {
+        "name": "White", "size": 1
+    }, {
+        "name": "Asian","size": 1
+
+    }
+    
+    ]
+
+
+},
+
+
+
+{
+
+    "name": "Age", "children": [{
+
+        "name": "<1", "size": 1
+    }, {
+        "name": "1-4", "size": 1
+    }, {
+        "name": "5-14", "size": 1
+    }, {
+        "name": "15-24", "size": 1
+    }, {
+        "name": "25-34","size": 1
+
+    },{
+
+        "name": "35-44", "size": 1
+    }, {
+        "name": "45-54", "size": 1
+    }, {
+        "name": "55-64", "size": 1
+    }, {
+        "name": "65-74", "size": 1
+    }, {
+        "name": "75-84", "size": 1
+    }, {
+        "name": "85+","size": 1
+
+    }
+    
+    ]
+
+
+}
+
+
+
+
+
+
+
+
+]
+}
