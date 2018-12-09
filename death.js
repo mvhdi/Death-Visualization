@@ -3,9 +3,8 @@
 
 
 //Makes the top naviagation circle
-
-var curNode = "yo";
-var parNode = "what";
+var curNode = "initalCurNode";
+var parNode = "initalParNode";
 var width = window.innerWidth-300,
     height = window.innerHeight-300,
     maxRadius = (Math.min(width, height) / 2) - 5;
@@ -73,13 +72,13 @@ function focusOn(d = { x0: 0, x1: 1, y0: 0, y1: 1 }) {
     }
 }
 
-
+// make the sunburst svg
 var svgg = d3.select('body').append('svg')
     .style('width', '75vw')
     .style('height', '75vh')
     .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
     .on('click', () => focusOn()); // Reset zoom on canvas click
-
+// parse the data
 d3.json('death.json', (error, root) => {
     if (error) throw error;
     root = d3.hierarchy(root);
@@ -94,7 +93,7 @@ d3.json('death.json', (error, root) => {
             focusOn(d);
 
             curNode = d.data.name;
-
+// create bar chart based on selection
             console.log("the current node is:" +  curNode);
             if (curNode != "CIRCLE OF 'LIFE'"){
                 d3.selectAll("#the_SVG_ID").remove();
@@ -292,9 +291,10 @@ d3.json('death.json', (error, root) => {
 
 
 
-// makes the interactve normalized stacked bar chart
+// function makes the interactve normalized stacked bar chart
 
 function makeBar(dataFile,label){
+    // create color for bars
 var colorbrewer = {Spectral: {
     2: ["#fc8d59","#99d594"],
     3: ["#fc8d59","#ffffbf","#99d594"],
@@ -352,7 +352,7 @@ var yAxis = d3.axisLeft()
     .tickFormat(d3.format(".0%"))
     .tickSize(0,0,0)
     .tickPadding(0);
-
+// make bar svg
 var svg = d3.select("body").append("svg")
 
     .attr("width", width + margin.left + margin.right)
