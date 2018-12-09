@@ -2,7 +2,7 @@
 
 Backround
 ---------
- This data in this visualization is from the Underlying Cause of Death database maintained by the Centers for Disease Control and Prevention. It provides data for the number of people who died in the United States between 1996 and 2016. The values themselves are estimates for the number of people who die due to each of the causes. The values are based on U.S death certificates. The dataset I created from this database contains 15 main causes of death, and for each cause the number of people that died from it broken down race, age and gender.
+ The data in this visualization is from the Underlying Cause of Death database maintained by the Centers for Disease Control and Prevention. It provides data for the number of people who died in the United States between 1996 and 2016. The values themselves are estimates for the number of people who die due to each of the causes. The values are based on U.S death certificates. The dataset I created from this database contains 15 main causes of death, and for each cause the number of people that died from it broken down race, age and gender.
 
 The main question that this visualization is addressing is: What are the major causes of death in the United States, and how does  it vary across sex, race, and age? 
  
